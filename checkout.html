@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColArt-Checkout</title>
+  <link rel="stylesheet" href="checkout.css" >
+</head>
+<body>
+  <div class="checkout_header">
+    <div class="checkout_header_left_section">
+      <a href="index.html">
+        <img  src="images/logo_medium.png" alt="logo_image" class="logo_image">
+      </a>
+    </div>
+
+    <div class="checkout_header_middle_section">
+      Checkout (<a class="return_to_home_link update_the_cart_quantity"
+        href="index.html"></a>)
+    </div>
+
+    <div class="checkout_header_right_section"></div>
+  </div>
+
+  <div class="main">
+    <div class="page_title">Review your order</div>
+
+    <div class="checkout_grid">
+      <div class="order_summary">
+      </div>
+      
+      <div class="payment_summary">
+        <div class="payment_summary_title">
+          Order Summary
+        </div>
+
+        <div class="payment_summary_row">
+          <div>Items (2):</div>
+          <div class="payment_summary_money">$5.80</div>
+        </div>
+
+        <div class="payment_summary_row">
+          <div>Shipping &amp; handling:</div>
+          <div class="payment_summary_money">$4.99</div>
+        </div>
+
+        <div class="payment_summary_row subtotal_row">
+          <div>Total before tax:</div>
+          <div class="payment_summary_money">$10.79</div>
+        </div>
+
+        <div class="payment_summary_row">
+          <div>Estimated tax (10%):</div>
+          <div class="payment_summary_money">$1.08</div>
+        </div>
+
+        <div class="payment_summary_row total_row">
+          <div>Order total:</div>
+          <div class="payment_summary_money">$11.87</div>
+        </div>
+
+        <button type="button" class="place_order_button button_primary">
+          Place your order
+        </button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/javascript_projects/ColArt_project/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color:#000000; /* text color*/
+  font-size: 100%;  
+  font-family: "Roboto", Arial;
+  width: 100%;
+  margin: 0;
+}
+
+.checkout_header {
+  height: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 15px;
+  margin: auto;
+}
+/* left section of the header */
+.checkout_header_left_section {
+  width: 90%;
+  margin: auto;
+}
+.logo_image {
+  height: 50px;
+  width: 75px;
+}
+.logo_image:hover {
+  border: 1px solid rgb(250, 91, 61);
+}
+
+/* middle section of the header */
+.checkout_header_middle_section {
+  width: 95%;
+  padding: 0 5px;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.return_to_home_link {
+  text-decoration: none;
+  color: rgb(250, 91, 61);
+}
+.return_to_home_link:hover {
+  color: rgb(245, 73, 39);
+}
+/* ---------------------------- */
+/* main section of the web page */
+/* ---------------------------- */
+.main {
+  margin: 70px auto 50px auto;
+  padding: 0 30px;
+}
+.page_title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.checkout_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 12px;
+  align-items: start;
+}
+.cart_item_container {
+  margin-bottom: 12px;
+}
+.cart_item_container, .payment_summary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  padding: 18px;
+}
+.delivery_date {
+  color: green;
+  font-size: larger;
+  font-weight: bold;
+}
+.delivery_date, .product_image, .cart_item_details {
+  margin-bottom: 20px;
+}
+.cart_item_details_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  align-items: start;
+}
+.product_image {
+  height: 220px;
+}
+.product_name, .product_price, .delivery_options_title, .payment_summary_title {
+  font-weight: bold;
+}
+.product_name, .product_price, .product_quantity, .delivery_options_title, .delivery_option_date, .delivery_option_price {
+  margin-bottom: 4px;
+}
+.product_price {
+  color: red;
+}
+.update_quantity_link, .delete_quantity_link {
+  color: rgb(93, 93, 201);
+}
+.update_quantity_link:hover, .delete_quantity_link:hover {
+  cursor: pointer;
+  color: rgb(250, 91, 61);
+}
+.delivery_option_input {
+  float: left;
+}
+.delivery_option_date {
+  color: green;
+}
+.delivery_option_price {
+  color: rgb(124, 118, 118);
+  margin-left: 25px;
+}
+.payment_summary_title {
+  margin-bottom: 10px;
+}
+.payment_summary_row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 8px;
+}
+.total_row, .subtotal_row {
+  border-top: 1px solid rgb(204, 201, 201);
+  margin-top: 10px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.total_row {
+  color: red;
+}
+.place_order_button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(247, 243, 10);
+  margin-top: 10px;
+  font-weight: bold;
+}
+.place_order_button:hover {
+  background-color: rgb(241, 226, 13);
+}
+
+/* for screen larger than 1000px  */
+@media only screen and (min-width: 1000px) {
+  .checkout_grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  .cart_item_details_grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product_image {
+    height: 180px;
+  }
+} 
