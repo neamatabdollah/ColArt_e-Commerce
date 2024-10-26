@@ -1,0 +1,219 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+body {
+  color:#000000; /* text color*/
+  font-size: 100%;  
+  font-family: "Roboto", Arial;
+  width: 100%;
+  margin: 0;
+}
+
+.header_container {
+  height: 60px;
+  width: 100%;
+  background-color: #D3D3D3;
+  /* background-image: linear-gradient(to bottom, #D3D3D3, white); */
+  display: grid;
+  grid-template-columns: 15% 45% 35%;
+  gap: 5px;
+  position: fixed;
+  top: 0;
+  margin: auto;
+}
+  /* header left section style */
+.header_left_section {
+  width: 90%;
+  margin: auto;
+}
+.logo_image {
+  height: 48px;
+  width: 72px;
+}
+  /* header middle section style */
+.header_middle_section {
+  height: 45px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+.search_box {
+  font-size: larger;
+  padding-left: 10px;
+  border: none;
+  border-radius:10px 0 0 10px;
+  flex-grow: 1;
+  min-width: 0;
+}
+.search_button {
+  width: 40px;
+  background-color: rgb(250, 91, 61);
+  padding: 10px;
+  border: none;
+  border-radius:0 10px 10px 0;
+  cursor: pointer;
+}
+.logo_image:hover, .search_box:hover, .search_button:hover {
+  border: 1px solid rgb(250, 91, 61);
+}
+.search_icon {
+  height: 20px;
+}
+/* header right section style */
+.header_right_section {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  text-align: right;
+}
+.return_button {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.cart_link {
+  background-color: transparent;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.return_button:hover, .cart_link:hover {
+  border: 1px solid rgb(250, 91, 61);
+}
+/* main section of the web page */
+.main {
+  margin: 70px 5px 10px 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  /* overflow-x: hidden; */
+}
+.product_container {
+  padding: 40px 25px 25px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+}
+.product_container:hover {
+  background-color: #f3eeee;
+  border: 1px solid rgb(250, 91, 61);
+}
+.product_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.product_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.product_name {
+  height: 40px;
+  width: 180px;
+  margin-bottom: 5px;
+  text-overflow: hidden;
+}
+.product_rating_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.product_rating_stars {
+  width: 100px;
+  margin-right: 6px;
+}
+.product_rating_count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+.product_price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.product_quantity_container {
+  margin-bottom: 17px;
+}
+.selection_quantity {
+  cursor: pointer;
+  height: 30px;
+  width: 50px;
+  color: rgb(33, 33, 33);
+  border: 1px solid rgb(173, 169, 169);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(230, 224, 224);
+}
+.selection_quantity:focus {
+  outline: 2px solid rgb(250, 91, 61);
+}
+.product_spacer {
+  flex: 1;
+}
+.added_to_cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  opacity: 0;
+}
+.displayAddedWord {
+  opacity: 1;
+}
+.added_to_cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+.add_to_cart_button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(247, 243, 10);
+}
+.add_to_cart_button:hover {
+  background-color: rgb(241, 226, 13);
+}
+
+
+/* for screen larger than 740px  */
+@media only screen and (min-width: 740px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* for screen larger than 980px  */
+@media only screen and (min-width: 980px) {
+  .header_container {
+    grid-template-columns: 10% 65% 20%;
+    column-gap: 0%;
+  }
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 
+/* for screen larger than 1200px  */
+@media only screen and (min-width: 1200px) {
+  .main {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0%;
+  }
+} 
+/* for screen larger than 1480px  */
+@media only screen and (min-width: 1480px) {
+  .main {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 0%;
+  }
+} 
